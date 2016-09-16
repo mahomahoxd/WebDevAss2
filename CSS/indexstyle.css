@@ -1,0 +1,22 @@
+body {
+    background: #c6ff5d;
+    margin:0;
+    padding:0;
+}
+
+nav{
+    background-color:#333;
+    margin:0;
+    font-size:16px;
+}
+
+nav> a{
+    color:#aaa;
+    line-height:2em;
+    padding: 0.5em 0.5em;
+    text-decoration:none;
+}
+
+nav>a:hover{
+    background-color:#CFCACA;
+}
