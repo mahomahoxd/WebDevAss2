@@ -4,19 +4,38 @@ body {
     padding:0;
 }
 
+header{
+    height:58px;
+}
 nav{
     background-color:#333;
     margin:0;
     font-size:16px;
+    width:100%;
+    position:fixed;
 }
 
 nav> a{
     color:#aaa;
-    line-height:2em;
-    padding: 0.5em 0.5em;
     text-decoration:none;
+    padding: 25px 25px;
+    float:right;
 }
 
 nav>a:hover{
     background-color:#CFCACA;
+}
+
+#indexinfo{
+    width:40%;
+    float:left;
+}
+
+#indexexample{
+    width:60%;
+    float:right;
+}
+
+#indexexample > img{
+    width:200px;
 }
