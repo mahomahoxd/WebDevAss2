@@ -3,20 +3,22 @@ body {
     margin:0;
     padding:0;
 }
-
 header{
-    height:58px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: black;
 }
 nav{
     background-color:#333;
     margin:0;
     font-size:16px;
-    width:100%;
-    position:fixed;
+	float:right;
 }
 
 nav> a{
     color:#aaa;
+	background-color:black;
     text-decoration:none;
     padding: 25px 25px;
     float:right;
@@ -24,6 +26,12 @@ nav> a{
 
 nav>a:hover{
     background-color:#CFCACA;
+}
+
+article{
+	overflow:hidden;
+	width:960px;
+	margin:100px auto 0px;
 }
 
 #indexinfo{
@@ -34,6 +42,12 @@ nav>a:hover{
 #indexexample{
     width:60%;
     float:right;
+}
+
+#navbar
+{
+	width:960px;
+	margin:0px auto;
 }
 
 #indexexample > img{
