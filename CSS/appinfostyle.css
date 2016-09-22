@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Calibri Light";
+}
+
+body{
+    background-color: #e5e5e5;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+
+}
+
+button {
+    background-color: #aaaaaa;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    margin: 1% 0;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+section{
+    float: left;
+    margin: 0 1.5%;
+    width: 40%;
+}
+
+
+nav {
+    padding: 1% 0;
+    text-align: center;
+    background-color: #333333;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+/*TOP SECTION*/
+#topSection{
+    background-color: #333333;
+    width: 100%;
+}
+
+/*GROUPS*/
+.group{
+    clear: both;
+    height: 20%;
+}
+.group2 {
+    clear: both;
+    text-align: right;
+}
+
+.group1 h1, .group2 h1{
+    margin-top: 5%;
+}
+
+.group h1, .group h2, .group2 h3{
+    color: white;
+}
+
+.group h3, .group2 h2, .group2 h1{
+    color: dimgray;
+}
+
+
+/*PARALLAX*/
+.parallax, .circleSection{
+    background: url("../Images/classroom.jpg") repeat fixed 100%;
+}
+.parallax-inner, #circleSection-inner {
+    padding: 5% 0;
+}
+
+.parallax-inner h2{
+    text-align: center;
+    font-size: 275%;
+    color: #E5E5E5;
+    text-transform: uppercase;
+}
+
+
+
+
