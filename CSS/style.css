@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: "Calibri Light";
+    font-family: "Calibri Light","Century Gothic","Arial";
 }
 
 body{
@@ -20,9 +20,9 @@ img{
 
 .navbarButton {
     background-color: #aaaaaa;
-    border-radius: 20px;
+    border-radius: 5px;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 20px;
     margin: 1% 0;
     text-align: center;
     display: inline-block;
