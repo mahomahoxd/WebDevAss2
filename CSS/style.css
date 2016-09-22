@@ -18,7 +18,7 @@ img{
 
 }
 
-button {
+.navbarButton {
     background-color: #aaaaaa;
     border-radius: 20px;
     color: white;
@@ -91,4 +91,17 @@ footer {
     font-size: 275%;
     color: #E5E5E5;
     text-transform: uppercase;
+}
+
+/*Form for contact*/
+#frmContact{padding:15px;}
+.contactfield {padding:4px; margin:1px;}
+.contactfield > label {
+    display:inline-block;
+    width:100px;
+}
+.contactfield > input {
+    display: inline-block;
+    width: 100px;
+    margin-left: 5px;
 }

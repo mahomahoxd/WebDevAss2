@@ -19,7 +19,7 @@ function validateContactForm()
         alert("Please fill in the name correctly.");
         return false;
     }
-    else if(txtEmail == "")
+    else if(txtEmail == "" || txtEmail.search("@") == -1 && txtEmail.search(".") == -1)
     {
         alert("Please fill in email correctly.");
         return false;
