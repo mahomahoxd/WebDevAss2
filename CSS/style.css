@@ -95,12 +95,12 @@ footer {
 
 #formArticle
 {
-    margin:auto;
+
 }
 /*Form for contact*/
 #frmContact{
-
-
+    margin: 5% auto;
+    width: 35%;
 }
 .contactfield {padding:4px; margin:1px;}
 .contactfield > label {
