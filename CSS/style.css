@@ -33,7 +33,7 @@ img{
 
 section{
     float: left;
-    margin: 25px 1.5% 0 1.5%;
+    margin: 12.5px 1.5% 12.5px 1.5%;
     width: 40%;
 }
 
@@ -97,6 +97,34 @@ footer {
 {
     margin:auto;
 }
+
+/*about us page*/
+#backgroundInfo{
+    margin:0px auto;
+    width:100%;
+}
+.developersImg{
+    border-radius:150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    margin-left: 50px;
+}
+#developersDiv{
+    display:inline-block;
+}
+#sectionPeoplePictures
+{
+    margin:0px auto;
+    width:100%;
+}
+.developer{
+    float:left;
+}
+.developer > p{
+    text-align:center;
+}
+
+
 /*Form for contact*/
 #frmContact{
 
