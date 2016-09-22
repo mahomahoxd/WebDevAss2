@@ -60,12 +60,14 @@ footer {
     clear: both;
     height: 20%;
 }
+
+
 .group2 {
     clear: both;
     text-align: right;
 }
 
-.group1 h1, .group2 h1{
+.group h1, .group2 h1{
     margin-top: 5%;
 }
 
@@ -77,6 +79,14 @@ footer {
     color: dimgray;
 }
 
+#gameImg{
+    margin-left: auto;
+    margin-right: 0;
+}
+#gameImg2{
+    margin-left: 0;
+    margin-right: auto;
+}
 
 /*PARALLAX*/
 .parallax, .circleSection{
@@ -95,7 +105,7 @@ footer {
 
 #formArticle
 {
-    margin:auto;
+
 }
 
 /*about us page*/
@@ -127,8 +137,8 @@ footer {
 
 /*Form for contact*/
 #frmContact{
-
-
+    margin: 5% auto;
+    width: 35%;
 }
 .contactfield {padding:4px; margin:1px;}
 .contactfield > label {
