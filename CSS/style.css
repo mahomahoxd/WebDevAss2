@@ -93,8 +93,15 @@ footer {
     text-transform: uppercase;
 }
 
+#formArticle
+{
+    margin:auto;
+}
 /*Form for contact*/
-#frmContact{padding:15px;}
+#frmContact{
+
+
+}
 .contactfield {padding:4px; margin:1px;}
 .contactfield > label {
     display:inline-block;

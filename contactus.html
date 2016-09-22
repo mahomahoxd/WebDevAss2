@@ -17,8 +17,9 @@
             <a class="navbarButton" href="contactus.html">Contact</a>
         </nav>
     </header>
-    <article>
+    <article id="formArticle">
         <form id="frmContact" name="formContact" onsubmit="return validateContactForm()" method="post">
+            <h1>Contact us</h1>
             <div class="contactfield">
                 <label for="name">Name :</label>
                 <input type="text" name="name">
@@ -28,8 +29,8 @@
                 <input type="text" name="email">
             </div>
             <div class="contactfield">
-                <label for="email">Message : </label>
-                <input type="text" name="message">
+                <label for="message">Message : </label>
+                <textarea name="message" cols="40" rows="5"></textarea>
             </div>
             <input type="submit" value="Submit">
         </form>
