@@ -15,7 +15,6 @@ img{
     margin-right: auto;
     max-width: 100%;
     height: auto;
-
 }
 
 .navbarButton {
@@ -61,7 +60,6 @@ footer {
     height: 20%;
 }
 
-
 .group2 {
     clear: both;
     text-align: right;
@@ -83,7 +81,10 @@ footer {
     margin-left: auto;
     margin-right: 0;
 }
-#gameImg2{
+#gameImg2, #shopImg2{
+    display: none;
+}
+#shopImg{
     margin-left: 0;
     margin-right: auto;
 }
@@ -166,4 +167,50 @@ footer {
 .centerContentDownload{
     width:550px;
     margin:35px auto 0px auto;
+}
+
+
+/*Desktops and laptops*/
+@media (min-width: 1024px) {
+    
+}
+/*Tablets*/
+@media (min-width: 680px) and (max-width: 1024px)  {
+
+    #gameImg, #shopImg{
+        display: none;
+    }
+
+    #gameImg2, #shopImg2{
+        display: block;
+    }
+
+    /*Different navbar*/
+
+}
+/*Smartphone*/
+@media (min-width: 320px) and (max-width:480px ) {
+
+    .developer{
+        float:none;
+        width:100%;
+    }
+    .centerContent{
+        width:310px;
+    }
+
+    /*Hide images*/
+    #gameImg, #gameImg2, #shopImg, #shopImg2{
+        display: none;
+    }
+
+    /*Display different compact navbar*/
+    .navbar {
+    }
+
+    .group, .group2{
+        text-align: center;
+        clear: both;
+        width: 100%;
+    }
 }
