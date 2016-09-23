@@ -137,16 +137,28 @@ footer {
 
 /*Form for contact*/
 #frmContact{
-    margin: 5% auto;
+    margin: 0 auto;
     width: 35%;
 }
 .contactfield {padding:4px; margin:1px;}
 .contactfield > label {
-    display:inline-block;
-    width:100px;
 }
 .contactfield > input {
     display: inline-block;
-    width: 100px;
-    margin-left: 5px;
+    width: 500px;
+    font-size:15px;
+}
+
+#frmContactSubmitButton{
+    background-color: #3498db;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    margin: 1% 0;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    float:right;
 }
