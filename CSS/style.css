@@ -11,11 +11,9 @@ body{
 
 img{
     display: block;
-    margin-left: auto;
+    margin-left: auto;    max-width: 100%;
     margin-right: auto;
-    max-width: 100%;
     height: auto;
-
 }
 
 .navbarButton {
@@ -135,7 +133,7 @@ footer {
 }
 .contactfield > input {
     display: inline-block;
-    width: 550px;
+    width: 100%;
     font-size:15px;
 }
 
@@ -167,3 +165,21 @@ footer {
     width:550px;
     margin:35px auto 0px auto;
 }
+
+@media screen and (min-width:320px) and (max-width: 480px) { /* smartphones, iPhone, portrait 480x320 phones */
+    .developer{
+        float:none;
+        width:100%;
+    }
+    .centerContent{
+        width:310px;
+    }
+    .navbar{
+
+    }
+}
+@media screen and (min-width:800px) and (max-width: 1280px){
+
+}
+
+
