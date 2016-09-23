@@ -17,23 +17,29 @@
             <a class="navbarButton" href="contactus.html">Contact</a>
         </nav>
     </header>
-    <article id="formArticle">
-        <form id="frmContact" name="formContact" onsubmit="return validateContactForm()" method="post">
-            <h1>Contact us</h1>
-            <div class="contactfield">
-                <label for="name">Name :</label>
-                <input type="text" name="name">
-            </div>
-            <div class="contactfield">
-                <label for="email">E-mail :</label>
-                <input type="text" name="email">
-            </div>
-            <div class="contactfield">
-                <label for="message">Message : </label>
-                <textarea name="message" cols="60" rows="7"></textarea>
-            </div>
-            <input id="frmContactSubmitButton" type="submit" value="Submit">
-        </form>
-    </article>
+    <div class="centerContentContact">
+        <article>
+            <form id="frmContact" name="formContact" onsubmit="return validateContactForm()" method="post">
+                <h1>Contact us!</h1>
+                <p>
+                    If you got any improvements for the app or if you got any questions, dont hesitate!
+                    Ask us anything you want to know.
+                </p>
+                <div class="contactfield">
+                    <label for="nameInput">Name :</label>
+                    <input type="text" name="name" id="nameInput">
+                </div>
+                <div class="contactfield">
+                    <label for="emailInput">E-mail :</label>
+                    <input type="text" name="email" id="emailInput">
+                </div>
+                <div class="contactfield">
+                    <label for="messageInput">Message : </label>
+                    <textarea name="message" cols="66" rows="8" id="messageInput"></textarea>
+                </div>
+                <input id="frmContactSubmitButton" type="submit" value="Submit">
+            </form>
+        </article>
+    </div>
 </body>
 </html>
