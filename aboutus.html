@@ -4,67 +4,66 @@
     <meta charset="UTF-8">
     <title>About us</title>
     <link rel="stylesheet" href="CSS/style.css">
-		<script src="JS/script.js"></script>
+    <script src="JS/script.js"></script>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <img src="Images/logo.png" alt="Saxion Simulator logo">
-            <div class="menu-icon"></div>
-            <a class="navbarButton" href="index.html">Home</a>
-            <a class="navbarButton" href="index.html#theGame">Product</a>
-            <a class="navbarButton" href="download.html">Download</a>
-            <a class="navbarButton" href="aboutus.html">About us</a>
-            <a class="navbarButton" href="contactus.html">Contact</a>
+            <a href="index.html"><img src="Images/logobig.png" alt="Saxion Simulator logo"></a>
+            <a class="navbarbutton" href="index.html">Home</a>
+            <a class="navbarbutton" href="index.html#gamesection">Product</a>
+            <a class="navbarbutton" href="download.html">Download</a>
+            <a class="navbarbuttoncurrent" href="aboutus.html">About us</a>
+            <a class="navbarbutton" href="contactus.html">Contact</a>
         </nav>
-        <nav class="navbar2">
-			<input type="button" id="show-menu" onclick="showMenu()" value="Show menu">
-			<ul id="ulmenu">
+        <nav class="navbarmobile">
+			<input type="button" id="showmenubutton" onclick="showMenu()" value="Show menu">
+			<ul id="mobilemenu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#theGame">Product</a></li>
+                <li><a href="index.html#gamesection">Product</a></li>
                 <li><a href="download.html">Download</a></li>
                 <li><a href="aboutus.html">About us</a></li>
                 <li><a href="contactus.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div class="centerContent">
-        <section id="backgroundInfo">
+    <div class="centercontentaboutus">
+        <section id="backgroundinfo">
             <h1>About us</h1><br>
-            <article>
-                <h3>The background info</h3>
-                <p>
-                    For 2 years, these 4 developers have fought in Android Studio to make their dreams come true.
-                     Erik Cheung and Maikel Scheffer were mainly developing the front end along with the backend
-                    while Marco Woldering and Maho Murtic programmed most things in the app itself.
-                </p>
-            </article>
-            <br>
-            <article>
-                <h3>The people that worked on this project</h3>
-                <div id="developersDiv">
-                    <div class="developer">
-                        <p><img class="developersImg" src="Images/erik1.jpg" alt="Erik Cheung"></p>
-                        <h4>Erik Cheung</h4>
-                        <p>Developer/Designer</p>
-                    </div>
-                    <div class="developer">
-                        <p><img class="developersImg" src="Images/marco1.jpg" alt="Marco Woldering"></p>
-                        <h4>Marco Woldering</h4>
-                        <p>Developer</p>
-                    </div>
-                    <div class="developer">
-                        <p><img class="developersImg" src="Images/maikel1.jpg" alt="Maikel Scheffer"></p>
-                        <h4>Maikel Scheffer</h4>
-                        <p>Designer/Developer</p>
-                    </div>
-                    <div class="developer">
-                        <p><img class="developersImg" src="Images/maho1.jpg" alt="Maho Murtic"></p>
-                        <h4>Maho Murtic</h4>
-                        <p>Developer</p>
-                    </div>
-                </div>
-            </article>
+                <article>
+                    <h3>The background info</h3>
+                    <p>
+                        For 2 years, these 4 developers have fought in Android Studio to make their dreams come true.
+                        Erik Cheung and Maikel Scheffer were mainly developing the front end along with the backend
+                        while Marco Woldering and Maho Murtic programmed most things in the app itself.
+                    </p>
+                </article>
+                <br>
+                <article>
+                    <h3>The people that worked on this project</h3>
+                        <div id="developersdiv">
+                            <div class="developer">
+                                <p><img class="developerimage" src="Images/erik1.jpg" alt="Erik Cheung"></p>
+                                <h4>Erik Cheung</h4>
+                                <p>Developer/Designer</p>
+                            </div>
+                            <div class="developer">
+                                <p><img class="developerimage" src="Images/marco1.jpg" alt="Marco Woldering"></p>
+                                <h4>Marco Woldering</h4>
+                                <p>Developer</p>
+                            </div>
+                            <div class="developer">
+                                <p><img class="developerimage" src="Images/maikel1.jpg" alt="Maikel Scheffer"></p>
+                                <h4>Maikel Scheffer</h4>
+                                <p>Designer/Developer</p>
+                            </div>
+                            <div class="developer">
+                                <p><img class="developerimage" src="Images/maho1.jpg" alt="Maho Murtic"></p>
+                                <h4>Maho Murtic</h4>
+                                <p>Developer</p>
+                            </div>
+                        </div>
+                </article>
         </section>
     </div>
 </body>

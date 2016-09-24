@@ -1,5 +1,5 @@
 /*Desktop design mainly, differences are corrected in the @media tags below*/
-/*Set font family and standard values for everything*/
+/*Set font family and standard values for everything, Also all the main tags are here*/
 *{
     margin: 0;
     padding: 0;
@@ -9,15 +9,14 @@
 
 /*Color for all the content below the header*/
 body{
-    background-color: #cbc8c8;
+    background-color: #CCC;
 }
 
 /*Displays all the images standard in a block, along with left and right automatically*/
 img{
     display: block;
-    margin-left: auto;
     max-width: 100%;
-    margin-right: auto;
+	margin:0 auto;
     height: auto;
 }
 
@@ -32,28 +31,17 @@ section{
 .navbar {
     padding: 15px 0;
     text-align: center;
-    background-color: #333333;
+    background-color: #333;
 }
 
-.navbar2{
-    display: none;
-}
-
-
-.show-menu {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-decoration: none;
-    color: #fff;
-    background: greenyellow;
-    text-align: center;
-    padding: 10px 0;
+.navbarmobile{
     display: none;
 }
 
 
 /*main navbar button*/
-.navbarButton {
-    background-color: #aaaaaa;
+.navbarbutton {
+    background-color: #AAA;
     border-radius: 5px;
     color: white;
     padding: 10px 20px;
@@ -62,13 +50,27 @@ section{
     text-decoration: none;
 }
 
+.navbarbutton:hover{
+	background-color:#BBB;
+}
+
+/*Style for the navbarbutton, the current page that the user is on*/
+.navbarbuttoncurrent{
+	background-color:#BBB;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    text-decoration: none;
+}
 
 /*Homepage*/
 /*TOP SECTION*/
-#topSection{
-    background-color: #333333;
+#headersection{
+    background-color: #333;
     width: 100%;
-    background-image: url("../Images/headerimg.png");
+    background-image: url("../Images/headerimgbig.png");
     height:635px;
     background-repeat:no-repeat;
     background-position:center;
@@ -77,7 +79,6 @@ section{
 /*GROUPS for the sections with group being left and group2 being right*/
 .group{
     clear: both;
-    height: 20%;
 }
 
 .group2 {
@@ -98,44 +99,44 @@ section{
 }
 
 /*The images for a bigger resolution*/
-#gameImg{
+#gameimagebig{
 	float:right;
 }
 
-#shopImg{
+#shopimagebig{
 	float:left;
 }
 
 /*The images for a lower resolution*/
-#gameImg2, #shopImg2{
+#gameimagesmall, #shopimagesmall{
     display: none;
 }
 
 /*PARALLAX*/
-.parallax, .circleSection{
+.middlesectionindex, .bottomsectionindex{
     background: url("../Images/classroom.jpg") repeat fixed 100%;
 	background-size:100%;
 }
 
-.parallax-inner, #circleSection-inner {
+.middlesectionindexinner, #bottomsectionindexinner {
     padding: 5% 0;
 }
 
 /*about us page*/
 /*Centers content horizontally of About us */
-.centerContent{
+.centercontentaboutus{
     width:600px;
     margin:0 auto;
 }
 
 /*The backgroundinfo div, along with the info + the images in it*/
-#backgroundInfo{
+#backgroundinfo{
     width:100%;
 	margin-top:35px;
 }
 
 /*The images styling of the developers, border radius for mozilla,chrome and other browsers*/
-.developersImg{
+.developerimage{
     border-radius:150px;
 	-webkit-border-radius: 150px;
     -moz-border-radius: 150px;
@@ -152,7 +153,7 @@ section{
 
 /*Contact page*/
 /*Centers content horizontally of contact*/
-.centerContentContact{
+.centercontentcontact{
     width:550px;
     margin:35px auto 0px auto;
 }
@@ -171,25 +172,28 @@ section{
     font-size:15px;
 }
 
-#messageInput{
+#messageinput{
 	width:100%;
 }
 
-#frmContactSubmitButton{
-    background-color: #3498db;
+#contactsubmitbutton{
+    background-color: #39D;
     border-radius: 5px;
     color: white;
     padding: 5px 10px;
     margin-top: 5px;
 	margin-bottom:35px;
     font-size: 16px;
-
     float:right;
+}
+
+#contactsubmitbutton:hover{
+	background-color: #27A;
 }
 
 /*Download page*/
 /*Centers content horizontally of download*/
-.centerContentDownload{
+.centercontentdownload{
     width:550px;
     margin:35px auto 0px auto;
 }
@@ -198,13 +202,13 @@ section{
 #requirements{
     float:left;
 }
-#imageDownloadRight{
+#imagedownloadright{
     margin-bottom:35px;
 	float:right;
 }
 
 /*The a href link that we transformed into looking like a button*/
-.downloadLink{
+.downloadlink{
     background-color: green;
     border-radius: 5px;
     color: white;
@@ -214,31 +218,32 @@ section{
     text-decoration: none;
 }
 
+.downloadlink:hover{
+	background-color:darkgreen;
+}
 
 /*Tablets*/
 @media screen and (min-width: 680px) and (max-width: 1024px)  {
 
-    #gameImg, #shopImg{
+    #gameimagebig, #shopimagebig{
         display: none;
     }
 
-    #gameImg2, #shopImg2{
+    #gameimagesmall, #shopimagesmall{
         display: block;
     }
 	
-	#topSection{
+	#headersection{
 		background-size:100%;
 		height:380px;
 	}
-
-    /*different navbar*/
 }
 
 /*Smartphone*/
 
 @media screen and (max-width:680px ) {
     /*Hide images*/
-    #gameImg, #gameImg2, #shopImg, #shopImg2, .parallax-inner {
+    #gameimagebig, #gameimagesmall, #shopimagebig, #shopimagesmall, .middlesectionindexinner {
         display: none;
     }
 
@@ -264,12 +269,12 @@ section{
         margin: 0 auto;
     }
 
-    #imageDownloadRight {
+    #imagedownloadright {
         float: none;
         margin-top: 10px;
     }
 
-    #topSection {
+    #headersection {
         background-image: url("../Images/homepage-mobile.png");
         height: 150px;
         background-size: 100%;
@@ -297,40 +302,38 @@ section{
         display: none;
     }
 
-    #show-menu {
+    #showmenubutton {
         display:block;
 		width:100%;
 		font-size:20px;
-		background-color:#0954ac;
+		background-color:#15A;
 		color:white;
 		border-bottom:1px solid;
 		padding:5px;
     }
 	
-	#ulmenu{
+	#mobilemenu{
 		display:none;
 	}
 	
-	.navbar2{
+	.navbarmobile{
 		display:block;
 	}
 	
-    .navbar2 ul{
+    .navbarmobile ul{
         background-color: white;
         color: white;
         display: block;
     }
 
-    .navbar2 li{
-        background-color: #1b2259;
+    .navbarmobile li{
+        background-color: #225;
         color: white;
         display: block;
     }
 
-
-
-    .navbarButton {
-        background-color: #aaaaaa;
+    .navbarbutton {
+        background-color: #AAA;
         border-radius: 5px;
         color: white;
         padding: 10px 20px;
@@ -338,19 +341,16 @@ section{
         text-decoration: none;
     }
 
-
     /*PARALLAX*/
-    .parallax, .circleSection {
+    .middlesectionindex, .bottomsectionindex {
         background: black;
     }
 
-    .centerContent, .centerContentDownload {
+    .centercontentaboutus, .centercontentdownload {
         width: 310px;
     }
 
-    textarea, .centerContentContact {
+    textarea, .centercontentcontact {
         width: 280px;
     }
-
-
 }

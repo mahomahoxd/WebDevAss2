@@ -1,11 +1,7 @@
-function onLoad()
-{
-}
-
 function validateContactForm()
 {
     //get form first
-    var formContact = document.forms["formContact"];
+    var formContact = document.forms["formcontact"];
     //get values from form
     var txtName = formContact["name"].value;
     var txtEmail = formContact["email"].value;
@@ -19,7 +15,7 @@ function validateContactForm()
         alert("Please fill in the name correctly.");
         return false;
     }
-    else if(txtEmail == "" || txtEmail.search("@") == -1 && txtEmail.search(".") == -1)
+    else if(txtEmail == "")
     {
         alert("Please fill in email correctly.");
         return false;
@@ -34,14 +30,15 @@ function validateContactForm()
 
 function showMenu()
 {
-	var menu = document.getElementById("ulmenu");
+	var menu = document.getElementById("mobilemenu");
+
 	if(menu.style.display == 'none' || menu.style.display == "")
 	{
 		menu.style.display = 'block';
-		document.getElementById("show-menu").value="Close menu";
+		document.getElementById("showmenubutton").value="Close menu";
 	}
 	else{
 		menu.style.display = 'none';
-		document.getElementById("show-menu").value="Show menu";
+		document.getElementById("showmenubutton").value="Show menu";
 	}
 }

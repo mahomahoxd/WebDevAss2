@@ -5,59 +5,52 @@
     <title>About our app</title>
     <link rel="stylesheet" href="CSS/style.css">
 	<script src="JS/script.js"></script>
-	</head>
+</head>
 <body>
 <!--Top section includes navbar + image-->
     <header>
         <nav class="navbar">
-            <img src="Images/logo.png" alt="Saxion Simulator logo">
-            <div class="menu-icon"></div>
-            <a class="navbarButton" href="index.html">Home</a>
-            <a class="navbarButton" href="#theGame">Product</a>
-            <a class="navbarButton" href="download.html">Download</a>
-            <a class="navbarButton" href="aboutus.html">About us</a>
-            <a class="navbarButton" href="contactus.html">Contact</a>
+            <a href="index.html"><img src="Images/logobig.png" alt="Saxion Simulator logo"></a>
+            <a class="navbarbuttoncurrent" href="index.html">Home</a>
+            <a class="navbarbutton" href="#gamesection">Product</a>
+            <a class="navbarbutton" href="download.html">Download</a>
+            <a class="navbarbutton" href="aboutus.html">About us</a>
+            <a class="navbarbutton" href="contactus.html">Contact</a>
         </nav>
-        <nav class="navbar2">
-			<input type="button" id="show-menu" onclick="showMenu()" value="Show menu">
-			<ul id="ulmenu">
+        <nav class="navbarmobile">
+			<input type="button" id="showmenubutton" onclick="showMenu()" value="Show menu">
+			<ul id="mobilemenu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#theGame">Product</a></li>
+                <li><a href="#gamesection">Product</a></li>
                 <li><a href="download.html">Download</a></li>
                 <li><a href="aboutus.html">About us</a></li>
                 <li><a href="contactus.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-
     <!--Top section-->
     <div class="group">
-        <div id="topSection">
-
+        <div id="headersection">
         </div>
     </div>
-
-
     <!--Paralax img-->
     <div class="group">
-        <div class="parallax">
+        <div class="middlesectionindex">
             <div>
-                <div class="parallax-inner">
-                    <img src="Images/icons.png" alt="Powerups image">
+                <div class="middlesectionindexinner">
+                    <img src="Images/powerups.png" alt="Powerups image">
                 </div>
             </div>
 
         </div>
     </div>
-
-
     <!--Game section-->
     <div class="group">
         <section>
-            <img id="gameImg" src="Images/g1.png" alt="Game image 1">
-            <img id="gameImg2" src="Images/g2.png" alt="Game image 2">
+            <img id="gameimagebig" src="Images/gameexamplebig.png" alt="Game image 1">
+            <img id="gameimagesmall" src="Images/gameexamplesmall.png" alt="Game image 1">
         </section>
-        <section id="theGame">
+        <section id="gamesection">
             <h1>THE GAME</h1>
             <h2>LEARN</h2>
             <h3>Gain knowledge by making homework</h3>
@@ -67,7 +60,6 @@
             <h3>Graduate by passing tests</h3>
         </section>
     </div>
-
     <!--Shop section-->
     <div class="group2">
         <section>
@@ -83,18 +75,16 @@
             <h3>Restores stamina</h3>
         </section>
         <section>
-            <img id="shopImg" src="Images/s1.png" alt="Game image 3">
-            <img id="shopImg2" src="Images/s2.png" alt="Game image 4">
+            <img id="shopimagebig" src="Images/shopexamplebig.png" alt="Game image 2">
+            <img id="shopimagesmall" src="Images/shopexamplesmall.png" alt="Game image 2">
         </section>
     </div>
-
     <!--Circle section(parallax)-->
     <div class="group">
-        <div class="circleSection">
-            <div id="circleSection-inner">
+        <div class="bottomsectionindex">
+            <div id="bottomsectionindexinner">
             </div>
         </div>
     </div>
-
 </body>
 </html>
