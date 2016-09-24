@@ -21,20 +21,6 @@ img{
     height: auto;
 }
 
-/*One navbar button, might change all this later*/
-.navbarButton {
-    background-color: #aaaaaa;
-    border-radius: 5px;
-    color: white;
-    padding: 10px 20px;
-    margin: 1% 0;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
 /*Sections in general*/
 section{
     float: left;
@@ -42,17 +28,31 @@ section{
     width: 40%;
 }
 
+/*Footer*/
+footer {
+    background-color: black;
+    color: white;
 
+}
+
+/*CLASSES*/
 .navbar {
-    padding: 1% 0;
+    padding: 15px 0;
     text-align: center;
     background-color: #333333;
 }
 
-footer {
-    background-color: black;
+/*One navbar button, might change all this later*/
+.navbarButton {
+    background-color: #aaaaaa;
+    border-radius: 5px;
     color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    text-decoration: none;
 }
+
 
 /*Homepage*/
 /*TOP SECTION*/
@@ -65,7 +65,7 @@ footer {
     background-position:center;
 }
 
-/*GROUPS*/
+/*GROUPS for the sections with group being left and group2 being right*/
 .group{
     clear: both;
     height: 20%;
@@ -88,52 +88,49 @@ footer {
     color: dimgray;
 }
 
+/*The images for a bigger resolution*/
 #gameImg{
-    margin-left: auto;
-    margin-right: 0;
+	float:right;
 }
+
+#shopImg{
+	float:left;
+}
+
+/*The images for a lower resolution*/
 #gameImg2, #shopImg2{
     display: none;
-}
-#shopImg{
-    margin-left: 0;
-    margin-right: auto;
 }
 
 /*PARALLAX*/
 .parallax, .circleSection{
     background: url("../Images/classroom.jpg") repeat fixed 100%;
 }
+
 .parallax-inner, #circleSection-inner {
     padding: 5% 0;
-}
-
-.parallax-inner h2{
-    text-align: center;
-    font-size: 275%;
-    color: #E5E5E5;
-    text-transform: uppercase;
 }
 
 /*about us page*/
 /*Centers content horizontally of About us */
 .centerContent{
-    width:800px;
+    width:600px;
     margin:0 auto;
 }
 
+/*The backgroundinfo div, along with the info + the images in it*/
 #backgroundInfo{
     width:100%;
 }
+
+/*The images styling of the developers, border radius for mozilla,chrome and other browsers*/
 .developersImg{
     border-radius:150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
 }
-#sectionPeoplePictures
-{
-    width:100%;
-}
+
+/*Styling for one of the developer divs*/
 .developer{
     float:left;
     text-align:center;
@@ -149,6 +146,7 @@ footer {
     margin:35px auto 0px auto;
 }
 
+/*Contact fields + submit button*/
 .contactfield {
     padding:4px;
     margin:1px;
@@ -162,17 +160,18 @@ footer {
     font-size:15px;
 }
 
+#messageInput{
+	width:100%;
+}
+
 #frmContactSubmitButton{
     background-color: #3498db;
     border-radius: 5px;
     color: white;
     padding: 5px 10px;
-    margin: 1% 0;
-    text-align: center;
-    display: inline-block;
+    margin: 5px 0;
     font-size: 16px;
-    text-transform: uppercase;
-    text-decoration: none;
+
     float:right;
 }
 
@@ -183,23 +182,22 @@ footer {
     margin:35px auto 0px auto;
 }
 
+/*The requirements along with the picture on the right*/
 #requirements{
     float:left;
 }
-#downloadLink{
+#imageDownloadRight{
     float:right;
 }
 
+/*The a href link that we transformed into looking like a button*/
 .downloadLink{
     background-color: green;
     border-radius: 5px;
     color: white;
     padding: 10px 60px;
-    margin: 30px 0;
-    text-align: center;
+    margin-top: 30px;
     display: inline-block;
-    font-size: 16px;
-    text-transform: uppercase;
     text-decoration: none;
 }
 
@@ -214,10 +212,16 @@ footer {
     #gameImg2, #shopImg2{
         display: block;
     }
+	
+	#topSection{
+		background-size:100%;
+		height:380px;
+	}
 
     /*different navbar*/
 }
-    /*Smartphone*/
+
+/*Smartphone*/
 @media (min-width: 320px) and (max-width:480px ) {
 
 
@@ -242,8 +246,9 @@ footer {
         width:250px;
         margin:0 auto;
     }
-    #downloadLink{
+    #imageDownloadRight{
         float:none;
+		margin-top:10px;
     }
     #topSection{
         background-image: url("../Images/homepage-mobile.png");
