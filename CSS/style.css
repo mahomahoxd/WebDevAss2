@@ -105,6 +105,7 @@ footer {
 /*PARALLAX*/
 .parallax, .circleSection{
     background: url("../Images/classroom.jpg") repeat fixed 100%;
+	background-size:100%;
 }
 
 .parallax-inner, #circleSection-inner {
@@ -126,7 +127,7 @@ footer {
 /*The images styling of the developers, border radius for mozilla,chrome and other browsers*/
 .developersImg{
     border-radius:150px;
-    -webkit-border-radius: 150px;
+	-webkit-border-radius: 150px;
     -moz-border-radius: 150px;
 }
 
@@ -169,7 +170,8 @@ footer {
     border-radius: 5px;
     color: white;
     padding: 5px 10px;
-    margin: 5px 0;
+    margin-top: 5px;
+	margin-bottom:35px;
     font-size: 16px;
 
     float:right;
@@ -187,7 +189,8 @@ footer {
     float:left;
 }
 #imageDownloadRight{
-    float:right;
+    margin-bottom:35px;
+	float:right;
 }
 
 /*The a href link that we transformed into looking like a button*/
@@ -203,7 +206,7 @@ footer {
 
 
 /*Tablets*/
-@media (min-width: 680px) and (max-width: 1024px)  {
+@media screen and (min-width: 680px) and (max-width: 1024px)  {
 
     #gameImg, #shopImg{
         display: none;
@@ -222,7 +225,7 @@ footer {
 }
 
 /*Smartphone*/
-@media (min-width: 320px) and (max-width:480px ) {
+@media screen and (max-width:680px ) {
 
 
     /*Hide images*/
