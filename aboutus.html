@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <title>About us</title>
     <link rel="stylesheet" href="CSS/style.css">
+		<script src="JS/script.js"></script>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <img src="Images/logo.png" alt="Saxion Simulator logo">
+            <div class="menu-icon"></div>
             <a class="navbarButton" href="index.html">Home</a>
             <a class="navbarButton" href="index.html#theGame">Product</a>
             <a class="navbarButton" href="download.html">Download</a>
             <a class="navbarButton" href="aboutus.html">About us</a>
             <a class="navbarButton" href="contactus.html">Contact</a>
+        </nav>
+        <nav class="navbar2">
+			<input type="button" id="show-menu" onclick="showMenu()" value="Show menu">
+			<ul id="ulmenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#theGame">Product</a></li>
+                <li><a href="download.html">Download</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <div class="centerContent">

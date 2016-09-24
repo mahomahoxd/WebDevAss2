@@ -9,7 +9,7 @@
 
 /*Color for all the content below the header*/
 body{
-    background-color: #e5e5e5;
+    background-color: #cbc8c8;
 }
 
 /*Displays all the images standard in a block, along with left and right automatically*/
@@ -28,13 +28,6 @@ section{
     width: 40%;
 }
 
-/*Footer*/
-footer {
-    background-color: black;
-    color: white;
-
-}
-
 /*CLASSES*/
 .navbar {
     padding: 15px 0;
@@ -42,7 +35,23 @@ footer {
     background-color: #333333;
 }
 
-/*One navbar button, might change all this later*/
+.navbar2{
+    display: none;
+}
+
+
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: greenyellow;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+
+/*main navbar button*/
 .navbarButton {
     background-color: #aaaaaa;
     border-radius: 5px;
@@ -122,6 +131,7 @@ footer {
 /*The backgroundinfo div, along with the info + the images in it*/
 #backgroundInfo{
     width:100%;
+	margin-top:35px;
 }
 
 /*The images styling of the developers, border radius for mozilla,chrome and other browsers*/
@@ -225,18 +235,18 @@ footer {
 }
 
 /*Smartphone*/
+
 @media screen and (max-width:680px ) {
-
-
     /*Hide images*/
-    #gameImg, #gameImg2, #shopImg, #shopImg2, .parallax-inner{
+    #gameImg, #gameImg2, #shopImg, #shopImg2, .parallax-inner {
         display: none;
     }
-    section,h1,p,label{
+
+    section, h1, p, label {
         font-size-adjust: 0.4;
-        float:none;
-        width:300px;
-        margin:0 auto;
+        float: none;
+        width: 300px;
+        margin: 0 auto;
     }
 
     .developer {
@@ -244,34 +254,103 @@ footer {
         width: 100%;
     }
 
-    #requirements{
-        float:none;
-        width:250px;
-        margin:0 auto;
+    .group, .group2 {
+        text-align: center;
     }
-    #imageDownloadRight{
-        float:none;
-		margin-top:10px;
+
+    #requirements {
+        float: none;
+        width: 250px;
+        margin: 0 auto;
     }
-    #topSection{
+
+    #imageDownloadRight {
+        float: none;
+        margin-top: 10px;
+    }
+
+    #topSection {
         background-image: url("../Images/homepage-mobile.png");
-        height:150px;
-        background-size:100%;
+        height: 150px;
+        background-size: 100%;
     }
+
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+		text-decoration:none;
+		color:white;
+		text-align:center;
+		display:block;
+		padding:2.5px 0;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    #show-menu {
+        display:block;
+		width:100%;
+		font-size:20px;
+		background-color:#0954ac;
+		color:white;
+		border-bottom:1px solid;
+		padding:5px;
+    }
+	
+	#ulmenu{
+		display:none;
+	}
+	
+	.navbar2{
+		display:block;
+	}
+	
+    .navbar2 ul{
+        background-color: white;
+        color: white;
+        display: block;
+    }
+
+    .navbar2 li{
+        background-color: #1b2259;
+        color: white;
+        display: block;
+    }
+
+
+
+    .navbarButton {
+        background-color: #aaaaaa;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 20px;
+        margin: 5px 0;
+        text-decoration: none;
+    }
+
+
     /*PARALLAX*/
-    .parallax, .circleSection{
-        background:black;
+    .parallax, .circleSection {
+        background: black;
     }
 
     .centerContent, .centerContentDownload {
         width: 310px;
     }
 
-    textarea,.centerContentContact{
-        width:280px;
+    textarea, .centerContentContact {
+        width: 280px;
     }
 
-    .navbar {
 
-    }
 }

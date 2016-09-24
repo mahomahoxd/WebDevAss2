@@ -4,23 +4,35 @@
     <meta charset="UTF-8">
     <title>Download the APK!</title>
     <link rel="stylesheet" href="CSS/style.css">
+		<script src="JS/script.js"></script>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <img src="Images/logo.png" alt="Saxion Simulator logo">
+            <div class="menu-icon"></div>
             <a class="navbarButton" href="index.html">Home</a>
             <a class="navbarButton" href="index.html#theGame">Product</a>
             <a class="navbarButton" href="download.html">Download</a>
             <a class="navbarButton" href="aboutus.html">About us</a>
             <a class="navbarButton" href="contactus.html">Contact</a>
         </nav>
+        <nav class="navbar2">
+			<input type="button" id="show-menu" onclick="showMenu()" value="Show menu">
+			<ul id="ulmenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#theGame">Product</a></li>
+                <li><a href="download.html">Download</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="centerContentDownload">
         <div id="requirements">
             <h1>Requirements</h1>
-            <p>Android version 4.1+</p>
-            <p>3mb free storage required</p>
+            <p>Android version 4.1 or later</p>
+            <p>3MB free storage required</p>
             <p>No wifi required!</p>
             <p>Download now! Its for free.</p>
             <p><a class ="downloadLink" href="https://drive.google.com/uc?export=download&id=0B97cRBeaYzlWYUR5S2J5OS15TWc">DOWNLOAD</a></p>

@@ -26,8 +26,22 @@ function validateContactForm()
     }
     else
     {
-        //EVerthings okay
+        //Everthings okay
         alert("Successfully sent!");
         return true;
     }
+}
+
+function showMenu()
+{
+	var menu = document.getElementById("ulmenu");
+	if(menu.style.display == 'none' || menu.style.display == "")
+	{
+		menu.style.display = 'block';
+		document.getElementById("show-menu").value="Close menu";
+	}
+	else{
+		menu.style.display = 'none';
+		document.getElementById("show-menu").value="Show menu";
+	}
 }
