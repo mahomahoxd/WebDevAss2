@@ -1,3 +1,5 @@
+/*Desktop design mainly, differences are corrected in the @media tags below*/
+/*Set font family and standard values for everything*/
 *{
     margin: 0;
     padding: 0;
@@ -5,17 +7,21 @@
     font-family: "Calibri Light","Century Gothic","Arial";
 }
 
+/*Color for all the content below the header*/
 body{
     background-color: #e5e5e5;
 }
 
+/*Displays all the images standard in a block, along with left and right automatically*/
 img{
     display: block;
-    margin-left: auto;    max-width: 100%;
+    margin-left: auto;
+    max-width: 100%;
     margin-right: auto;
     height: auto;
 }
 
+/*One navbar button, might change all this later*/
 .navbarButton {
     background-color: #aaaaaa;
     border-radius: 5px;
@@ -29,6 +35,7 @@ img{
     text-decoration: none;
 }
 
+/*Sections in general*/
 section{
     float: left;
     margin: 12.5px 1.5% 12.5px 1.5%;
@@ -47,10 +54,15 @@ footer {
     color: white;
 }
 
+/*Homepage*/
 /*TOP SECTION*/
 #topSection{
     background-color: #333333;
     width: 100%;
+    background-image: url("../Images/headerimg.png");
+    height:635px;
+    background-repeat:no-repeat;
+    background-position:center;
 }
 
 /*GROUPS*/
@@ -103,12 +115,13 @@ footer {
     text-transform: uppercase;
 }
 
-#formArticle
-{
-
+/*about us page*/
+/*Centers content horizontally of About us */
+.centerContent{
+    width:800px;
+    margin:0 auto;
 }
 
-/*about us page*/
 #backgroundInfo{
     width:100%;
 }
@@ -129,7 +142,13 @@ footer {
 }
 
 
-/*Form for contact*/
+/*Contact page*/
+/*Centers content horizontally of contact*/
+.centerContentContact{
+    width:550px;
+    margin:35px auto 0px auto;
+}
+
 .contactfield {
     padding:4px;
     margin:1px;
@@ -157,6 +176,20 @@ footer {
     float:right;
 }
 
+/*Download page*/
+/*Centers content horizontally of download*/
+.centerContentDownload{
+    width:550px;
+    margin:35px auto 0px auto;
+}
+
+#requirements{
+    float:left;
+}
+#downloadLink{
+    float:right;
+}
+
 .downloadLink{
     background-color: green;
     border-radius: 5px;
@@ -170,37 +203,7 @@ footer {
     text-decoration: none;
 }
 
-.centerContent{
-    width:800px;
-    margin:0 auto;
-}
 
-.centerContentContact{
-    width:550px;
-    margin:35px auto 0px auto;
-}
-
-.centerContentDownload{
-    width:550px;
-    margin:35px auto 0px auto;
-}
-#topSection{
-    background-image: url("../Images/headerimg.png");
-    height:635px;
-    background-repeat:no-repeat;
-    background-position:center;
-}
-
-#requirements{
-    float:left;
-}
-#downloadLink{
-    float:right;
-}
-/*Desktops and laptops*/
-@media (min-width: 1024px) {
-
-}
 /*Tablets*/
 @media (min-width: 680px) and (max-width: 1024px)  {
 
@@ -262,21 +265,5 @@ footer {
 
     .navbar {
 
-    }
-}
-@media screen and (min-width:800px) and (max-width: 1280px) {
-    /*Hide images*/
-    #gameImg, #gameImg2, #shopImg, #shopImg2{
-        display: none;
-    }
-
-    /*Display different compact navbar*/
-    .navbar {
-    }
-
-    .group, .group2{
-        text-align: center;
-        clear: both;
-        width: 100%;
     }
 }
