@@ -26,7 +26,7 @@ function validateContactForm()
     }
     else
     {
-        //EVerthings okay
+        //Everthings okay
         alert("Successfully sent!");
         return true;
     }

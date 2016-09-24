@@ -42,7 +42,23 @@ footer {
     background-color: #333333;
 }
 
-/*One navbar button, might change all this later*/
+.navbar2{
+    display: none;
+}
+
+
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: greenyellow;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+
+/*main navbar button*/
 .navbarButton {
     background-color: #aaaaaa;
     border-radius: 5px;
@@ -222,18 +238,18 @@ footer {
 }
 
 /*Smartphone*/
-@media (min-width: 320px) and (max-width:480px ) {
-
+@media (min-width: 240px) and (max-width:480px ) {
 
     /*Hide images*/
-    #gameImg, #gameImg2, #shopImg, #shopImg2, .parallax-inner{
+    #gameImg, #gameImg2, #shopImg, #shopImg2, .parallax-inner {
         display: none;
     }
-    section,h1,p,label{
+
+    section, h1, p, label {
         font-size-adjust: 0.4;
-        float:none;
-        width:300px;
-        margin:0 auto;
+        float: none;
+        width: 300px;
+        margin: 0 auto;
     }
 
     .developer {
@@ -241,34 +257,91 @@ footer {
         width: 100%;
     }
 
-    #requirements{
-        float:none;
-        width:250px;
-        margin:0 auto;
+    .group, .group2 {
+        text-align: center;
     }
-    #imageDownloadRight{
-        float:none;
-		margin-top:10px;
+
+    #requirements {
+        float: none;
+        width: 250px;
+        margin: 0 auto;
     }
-    #topSection{
+
+    #imageDownloadRight {
+        float: none;
+        margin-top: 10px;
+    }
+
+    #topSection {
         background-image: url("../Images/homepage-mobile.png");
-        height:150px;
-        background-size:100%;
+        height: 150px;
+        background-size: 100%;
     }
+
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .show-menu {
+        display:block;
+    }
+
+    .navbar2 ul{
+        background-color: black;
+        font-family: "Calibri Light", "Century Gothic", "Arial";
+        border-bottom: 1px solid #e5e5e5;
+        color: white;
+        display: block;
+    }
+
+    .navbar2 li{
+        background-color: black;
+        font-family: "Calibri Light", "Century Gothic", "Arial";
+        border-bottom: 1px solid #e5e5e5;
+        color: white;
+        display: block;
+    }
+
+    .navbar2 li:last-child {
+        border-bottom: none;
+    }
+
+
+    .navbarButton {
+        background-color: #aaaaaa;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 20px;
+        margin: 5px 0;
+        text-decoration: none;
+    }
+
+
     /*PARALLAX*/
-    .parallax, .circleSection{
-        background:black;
+    .parallax, .circleSection {
+        background: black;
     }
 
     .centerContent, .centerContentDownload {
         width: 310px;
     }
 
-    textarea,.centerContentContact{
-        width:280px;
+    textarea, .centerContentContact {
+        width: 280px;
     }
 
-    .navbar {
 
-    }
 }
