@@ -135,11 +135,9 @@ section{
 	margin-top:35px;
 }
 
-/*The images styling of the developers, border radius for mozilla,chrome and other browsers*/
+/*The images styling of the developers*/
 .developerimage{
     border-radius:150px;
-	-webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
 }
 
 /*Styling for one of the developer divs*/
